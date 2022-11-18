@@ -1,0 +1,37 @@
+def countApplesAndOranges(s,t,a,b,apples,oranges):
+    if 1<= s,t,a,b <=10**5:
+        count_apples = 0
+        count_oranges = 0
+        #a + cada una de las distancias de apples
+
+        new_apple = []
+        for appleDistance in apples:
+            total_apple_distance = a + appleDistance
+            new_apple.append(total_apple_distance)
+
+        new_orange = []
+        for orangeDistance in oranges:
+            total_orange_distance = a + orangeDistance
+            new_orange.append(total_orange_distance)
+
+
+        new_apple, new_orange
+
+        for i  in range(len(new_apple)):
+            if s<=new_apple[i]<=t:
+                count_apples+=1
+        for i  in (new_orange):
+            if s<=i<=t:
+                count_oranges+=1
+        print(f"{count_apples}\n{count_oranges}")
+
+
+
+
+
+apples = [2,3,-4]
+oranges=[3,-2,-4]
+
+
+
+print(countApplesAndOranges(7,10,4,12,apples,oranges))
